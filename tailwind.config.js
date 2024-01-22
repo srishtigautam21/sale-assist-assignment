@@ -10,6 +10,10 @@ module.exports = {
         text1: "#002348",
         text2: "#003B79",
         offwhitebox: "#EBEEFF",
+        iconBlue: "#007DF2",
+      },
+      boxShadow: {
+        iconShadow: "0 10px 50px 25px rgba(0, 59, 121, 0.07)",
       },
     },
   },
