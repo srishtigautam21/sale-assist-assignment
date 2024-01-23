@@ -12,6 +12,8 @@ module.exports = {
         offwhitebox: "#EBEEFF",
         iconBlue: "#007DF2",
         card: "#AED3E2",
+        footer: "#ECF4FF",
+        gray: "#667C94",
       },
       boxShadow: {
         iconShadow: "0 10px 50px 25px rgba(0, 59, 121, 0.07)",
