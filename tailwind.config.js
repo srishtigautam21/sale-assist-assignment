@@ -11,6 +11,7 @@ module.exports = {
         text2: "#003B79",
         offwhitebox: "#EBEEFF",
         iconBlue: "#007DF2",
+        card: "#AED3E2",
       },
       boxShadow: {
         iconShadow: "0 10px 50px 25px rgba(0, 59, 121, 0.07)",
