@@ -10,7 +10,6 @@ const ReviewProvider = ({ children }) => {
   const handleReviews = async () => {
     try {
       const response = await axios.get(API);
-      console.log(response.data.data);
       setData(response.data.data);
     } catch (e) {
       console.error(e);
