@@ -24,38 +24,33 @@ const CustomerReview = () => {
           />
         </div>
         <div className='flex gap-5'>
-          {data
-            ?.slice(noOfReviews * 2 - 2, noOfReviews * 2)
-            .map((item, index) => {
-              return (
-                <>
-                  <div
-                    key={item.ID}
-                    className='w-[550px] h-[250px] shadow-iconShadow rounded-2xl flex flex-col justify-center items-start p-10 gap-3 relative'
-                  >
-                    <div className='text-text1 text-[18px] leading-[35px]'>
-                      {item.Reviews}
-                    </div>
-                    <div className='flex gap-2 items-center justify-center'>
-                      <img
-                        src={photo1}
-                        alt='patient-img'
-                        className='rounded-[50%] object-cover w-[40px] h-[40px]'
-                      />
-                      <div className='text-text1 font-semibold text-[20px] leading-[35px] flex flex-col'>
-                        {item.Name}
-                        <span className='text-text1 text-[12px] leading-[22px] italic '>
-                          Patient
-                        </span>
-                      </div>
-                    </div>
-                    <div className='rounded-[50%] object-cover w-[40px] h-[40px] bg-blue text-center absolute top-[-12px] right-[-12px]'>
-                      <span className='text-white text-[30px]'>❝</span>
+          {data?.slice(noOfReviews * 2 - 2, noOfReviews * 2).map((item) => {
+            return (
+              <div key={item.ID}>
+                <div className='w-[550px] h-[400px] shadow-iconShadow rounded-2xl flex flex-col justify-center items-start p-10 gap-3 relative'>
+                  <div className='text-text1 text-[18px] leading-[35px]'>
+                    {item.Reviews}
+                  </div>
+                  <div className='flex gap-2 items-center justify-center'>
+                    <img
+                      src={photo1}
+                      alt='patient-img'
+                      className='rounded-[50%] object-cover w-[40px] h-[40px]'
+                    />
+                    <div className='text-text1 font-semibold text-[20px] leading-[35px] flex flex-col'>
+                      {item.Name}
+                      <span className='text-text1 text-[12px] leading-[22px] italic '>
+                        Patient
+                      </span>
                     </div>
                   </div>
-                </>
-              );
-            })}
+                  <div className='rounded-[50%] object-cover w-[40px] h-[40px] bg-blue text-center absolute top-[-12px] right-[-12px]'>
+                    <span className='text-white text-[30px]'>❝</span>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
         <div className='cursor-pointer  hover:text-text2'>
           <FaAngleRight

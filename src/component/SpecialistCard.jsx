@@ -22,9 +22,11 @@ const SpecialistCard = () => {
   return (
     <div className='flex gap-5 items-center justify-center my-10 cursor-pointer'>
       {doctors.map((item) => {
-        // flex flex-col items-center justify-center gap-3
         return (
-          <div className='bg-white rounded-2xl w-[230px] h-[300px] shadow-iconShadow flex flex-col'>
+          <div
+            key={item.name}
+            className='bg-white rounded-2xl w-[230px] h-[300px] shadow-iconShadow flex flex-col'
+          >
             <div className='bg-card h-[220px] w-full rounded-t-2xl'></div>
             <div className='p-2 text-text2 text-[18px] font-bold'>
               {item.name}
